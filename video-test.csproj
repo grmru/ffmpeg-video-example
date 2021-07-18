@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>video_test</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--<PackageReference Include="AForge.Video" Version="2.2.5" />-->
+    <!--<PackageReference Include="AForge.Video.FFMPEG" Version="2.2.5.1-rc" />-->
+    <PackageReference Include="FFMpegCore" Version="4.4.0" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="ffmpeg.exe" CopyToOutputDirectory="Always" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="mult-png\**" CopyToPublishDirectory="PreserveNewest"/>
+  </ItemGroup>
+
+</Project>
